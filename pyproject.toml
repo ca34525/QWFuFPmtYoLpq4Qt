@@ -27,9 +27,11 @@ dependencies = [
     "pytest",
     "python-dotenv",
     "ruff",
-    "scikit-learn",
+    # The 1.9.1 Windows wheel is blocked by local application control.
+    "scikit-learn==1.9.0",
     "seaborn>=0.13.2",
     "shap>=0.54.1",
+    "xgboost",
 ]
 requires-python = "~=3.12.0"
 

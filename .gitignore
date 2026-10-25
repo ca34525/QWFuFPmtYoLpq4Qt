@@ -1,6 +1,10 @@
 # Data
 /data/
 
+# Generated training outputs
+/models/model.pkl
+/reports/training_results.json
+
 # Mac OS-specific storage files
 .DS_Store
 

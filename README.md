@@ -75,6 +75,7 @@ Each command-line run saves two files, replacing the previous run's outputs:
 | `happy_customers/config.py` | Defaults, columns, paths, and fixed parameter grids. |
 | `happy_customers/train.py` | Data checks, model training, evaluation, and the command-line entry point. |
 | `notebooks/1.0-CTA-customer-happiness-analysis.ipynb` | Exploration and results using the shared functions. |
+| `notebooks/2.0-CTA-customer-happiness-seed-42.ipynb` | Five code cells that repeat the modeling workflow with seed 42. |
 | `tests/` | Checks for data validation, reproducibility, scoring, and saved outputs. |
 
 This split between notebooks and reusable code follows

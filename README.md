@@ -13,8 +13,6 @@ uv sync
 ```
 
 Place the survey CSV at `data/raw/ACME-HappinessSurvey2020.csv`.
-It must contain `Y` (0 or 1) and `X1` through `X6` (scores from 1 to 5).
-The script reads this file and keeps repeated responses.
 
 Run with the defaults:
 
@@ -48,10 +46,6 @@ parameter grids, and file paths are fixed in the source code.
 4. Choose the highest mean score. Prefer fewer questions when scores tie exactly.
 5. Fit the winner on all training responses, then evaluate it on the test responses.
 
-Question selection and scaling happen inside each training fold. The notebook
-uses the same Python functions and adds exploration, plots, and explanations.
-Use CV results to select models and settings; keep test results for the final report.
-
 Training tables show only the chosen metric and its standard deviation across
 folds. The final test shows three metrics:
 
@@ -60,7 +54,7 @@ folds. The final test shows three metrics:
 - **Accuracy:** The fraction of correct predictions.
 
 The 0.73 target always applies to happy-customer F1, including when another
-metric guides model selection. See [scikit-learn's F1 documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
+metric guides model selection. 
 
 Each command-line run saves two files, replacing the previous run's outputs:
 
